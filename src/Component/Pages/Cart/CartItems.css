@@ -1,0 +1,132 @@
+.cartItem-container{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #F5F5F5;
+}
+.cartItem{
+    width: 35%;
+    margin: 10px;
+    padding: 0;
+}
+.cartItem-details{
+    width: 35%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cartItem-amount{
+    max-width: 90px;
+    display: inline-block;
+    border: 1px solid gray;
+    display: flex;
+}
+.delete-Item{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+.cartItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.cartItem-amount input{
+    width: 30px;
+    height: 25px;
+    border: none;
+    padding: 0 10px;
+}
+
+.cartItem-details button{
+    padding: 0 10px;
+    font-size: 20px;
+    border: none;
+}
+.cartItem-details span{
+    max-width: 95px;
+    background-color: #FF527B;
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.delete-Item button{
+    border: none;
+    color: red;
+    font-size: 25px;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px;
+}
+
+@media screen and (max-width: 786px) {
+    .cartItem-container{
+        padding: 0;
+        margin: 5px;
+    }
+    .cartItem-details{
+        padding: 0;
+    }
+    .cartItem-details h3{
+        font-size: 15px;
+    }
+    .cartItem-details h4{
+        font-size: 12px;
+    }
+    .cartItem-amount{
+        max-width: 85px;
+    }
+    .cartItem-amount input{
+        width: 30px;
+        height: 20px;
+        border: none;
+        padding: 0 10px;
+    }
+    
+    .cartItem-details button{
+        font-size: 13px;
+        border: none;
+    }
+    .cartItem-details span{
+        max-width: 75px;
+        font-size: 13px;
+        padding: 3px 8px;
+        margin-top: 2px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .cartItem-amount{
+        max-width: 60px;
+    }
+    .cartItem-details h3{
+        font-size: 13px;
+    }
+    .cartItem-details h4{
+        font-size: 10px;
+    }
+    .cartItem-amount input{
+        font-size: 10px;
+        width: 25px;
+        height: 15px;
+        padding: 8px;
+    }
+    
+    .cartItem-details button{
+        font-size: 10px;
+        padding: 0 5px;
+        height: 15px;
+    }
+    .cartItem-details span{
+        max-width: 55px;
+        font-size: 10px;
+        padding: 2px 5px;
+    }
+}

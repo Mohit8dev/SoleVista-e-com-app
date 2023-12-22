@@ -1,0 +1,263 @@
+.first-container{
+    margin: 0 6rem;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+    object-fit: contain;
+    background-image: url('../../../Images/main-page4.jpg');
+    background-size: cover;
+}
+.main{
+    border-radius: 50%;
+}
+.image{
+    width: 50%;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    object-fit: contain;
+}
+.text{
+    width: 50%;
+    padding: 40px;
+    background: transparent;
+}
+.text h1{
+    font-size: 4rem;
+    font-weight: 900;
+    letter-spacing: -2px;
+    font-family: 'Teko', sans-serif;
+}
+.text h2{
+    font-size: 5rem;
+    font-family: 'Teko', sans-serif;
+}
+.text p{
+    font-size: 20px;
+    padding: 5px;
+    font-weight: 600;
+}
+.text button{
+    padding: 10px 15px;
+    background-color: black;
+    font-size: 20px;
+    border-radius: 25px;
+    color: white;
+    margin: 10px 0;
+}
+.second-container{
+    margin: 2rem 6rem;
+    border-bottom: 1px solid gray;
+    padding: 0 0 30px 0;
+}
+.second-container h1{
+    font-size: 35px;
+    font-weight: normal;
+    padding: 10px 20px;
+}
+.second-content{
+    padding: 0 25px;
+}
+.third-container{
+    margin: 2rem 6rem;
+    border-bottom: 1px solid gray;
+}
+.third-container h1{
+    font-size: 35px;
+    font-weight: normal;
+    padding: 10px 20px;
+}
+.age-group{
+    display: flex;
+    max-width: 100%;
+    margin: 10px 40px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.Essentials{
+    width: 500px;
+    height:300px;
+    position: relative;
+    display: block;
+    background-size: cover;
+    overflow: hidden;
+    margin: 20px;
+}
+.Essentials img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.Essentials button{
+    position: absolute;
+    z-index: 111;
+    background-color: black;
+    padding: 10px 15px;
+    border-radius: 25px;
+    right: 50px;
+    top: 230px;
+}
+
+.fourth-container{
+    margin: 2rem 6rem;
+    border-bottom: 1px solid gray;
+}
+.fourth-container h1{
+    font-size: 35px;
+    font-weight: normal;
+    padding: 10px 20px;
+}
+.fourth-content{
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    .first-container{
+        margin: 0 3rem;
+    }
+    .second-container{
+        margin: 2rem 3rem;
+    }
+    .third-container{
+        margin: 2rem 3rem;
+    }
+    .age-group{
+        margin: 0;
+    }
+    .Essentials{
+    width: 400px;
+    height:250px;
+    }
+    .Essentials button{
+        top: 180px;
+    }
+    .fourth-container{
+        margin: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 986px) {
+    .first-container{
+        margin: 0;
+    }
+    .second-container{
+        margin: 2rem 0;
+    }
+    .third-container{
+        margin: 2rem 0;
+    }
+    .age-group{
+        margin: 0;
+    }
+    .Essentials{
+        width: 400px;
+        height:250px;
+    }
+    .Essentials button{
+        top: 180px;
+    }
+    .fourth-container{
+        margin: 2rem 0;
+    }
+}
+@media screen and (max-width: 786px) {
+    .first-container, .second-container, .third-container, .fourth-container{
+        margin: 0;
+    }
+    .second-container h1, .third-container h1, .fourth-container h1{
+        font-size: 25px;
+    }
+    .text{
+        padding: 20px;
+    }
+    .text h1{
+        font-size: 3rem;
+    }
+    .text p{
+        font-size: 15px;
+    }
+    .text button{
+        padding: 7px 10px;
+        font-size: 15px;
+        border-radius: 17px;
+        margin: 10px 0;
+    }
+    .text h2{
+        font-size: 3rem;
+    }
+    .Essentials{
+        width: 300px;
+        height:200px;
+        margin: 10px;
+    }
+    .Essentials button{
+        padding: 7px 10px;
+        font-size: 12px;
+        border-radius: 17px;
+        margin: 10px 0;
+        top: 130px;
+    }
+    .page-footer{
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    .about{
+        margin: 10px;
+    }
+    .about ul{
+        padding: 0;
+    }
+    .about ul li{
+        font-size: 12px;
+    }
+    .about ul li{
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 464px) {        
+    .second-container h1, .third-container h1, .fourth-container h1{
+        font-size: 20px;
+    }
+    .second-container{
+        padding: 0 0 10px 0;
+    }
+    .text{
+        padding: 10px;
+    }
+    .text h1{
+        font-size: 2rem;
+    }
+    .text p{
+        font-size: 12px;
+    }
+    .text button{
+        padding: 5px 8px;
+        font-size: 12px;
+        border-radius: 14px;
+        margin: 10px 0;
+    }
+    .text h2{
+        font-size: 2rem;
+    }
+    .Essentials{
+        width: 250px;
+        height:150px;
+        margin: 10px;
+    }
+    .Essentials button{
+        padding: 5px 8px;
+        font-size: 12px;
+        border-radius: 14px;
+        margin: 10px 0;
+        top: 100px;
+        right: 10px;
+    }
+    .page-footer{
+        padding: 20px;
+    }
+}
